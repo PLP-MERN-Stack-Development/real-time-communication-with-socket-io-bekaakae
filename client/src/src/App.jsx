@@ -56,12 +56,15 @@ const AppContent = () => {
 };
 
 // Wrap the main app with SocketProvider
+import React from 'react'
+
 function App() {
   return (
-    <SocketProvider>
-      <AppContent />
-    </SocketProvider>
-  );
+    <div>
+      <h1>Socket.io Chat App</h1>
+      <p>Real-time communication app</p>
+    </div>
+  )
 }
 
-export default App;
+export default App
